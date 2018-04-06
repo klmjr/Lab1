@@ -1,14 +1,17 @@
-
 public class Roll {
-	
-	private Die die1;
-	private Die die2;
-	
-	public roll()
-	{
-		die1 = new Die();
-		die2 = new Die();
-		
+
+	private Die d1;
+	private Die d2;
+	private int Score;
+
+	public Roll() {
+		d1 = new Die();
+		d2 = new Die();
+		Score = d1.getDieValue() + d2.getDieValue();
+	}
+
+	public int getScore() {
+		return Score;
 	}
 
 }
